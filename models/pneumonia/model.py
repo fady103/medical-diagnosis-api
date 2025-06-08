@@ -8,7 +8,7 @@ __version__ = "1.0"
 # تحميل النموذج
 model = load_model("models/pneumonia/CNN_pneumonia_model.h5")
 
-def predict_image(img_path: str) -> str:
+def predict_pipeline(img_path: str) -> str:
     """
     يقوم بتحميل الصورة، تجهيزها، وتشغيل التنبؤ باستخدام نموذج الالتهاب الرئوي.
     """
