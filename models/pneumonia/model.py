@@ -23,4 +23,4 @@ def predict_pipeline(img_path: str) -> str:
     prediction = model.predict(img_array)[0][0]
 
     # إرجاع التصنيف كنص
-    return "PNEUMONIA" if prediction >= 0.5 else "NORMAL"
+    return "PNEUMONIA" if prediction <= 0.5 else "NORMAL"
