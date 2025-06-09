@@ -5,7 +5,7 @@ import numpy as np
 __version__ = "1.0"
 
 # تحميل النموذج
-with open("models/diabetes/random_forest_model_diapetes.pkl", "rb") as f:
+with open("models/diapetes/random_forest_model_diapetes.pkl", "rb") as f:
     model = pickle.load(f)
 
 # دالة التنبؤ
